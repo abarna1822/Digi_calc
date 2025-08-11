@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="history" id="history"></div>
+    <div class="buttons">
+      <!-- Memory -->
+      <button data-func="MC">MC</button>
+      <button data-func="MR">MR</button>
+      <button data-func="M+">M+</button>
+      <button data-func="M-">M-</button>
+
+      <!-- Mode & Clear -->
+      <button data-func="toggle-mode">Deg</button>
+      <button data-func="clear">AC</button>
+      <button data-func="back">⌫</button>
+      <button data-val="/">÷</button>
+
+      <!-- Numbers & Ops -->
+      <button data-val="7">7</button>
+      <button data-val="8">8</button>
+      <button data-val="9">9</button>
+      <button data-val="*">×</button>
+
+      <button data-val="4">4</button>
+      <button data-val="5">5</button>
+      <button data-val="6">6</button>
+      <button data-val="-">−</button>
+
+      <button data-val="1">1</button>
+      <button data-val="2">2</button>
+      <button data-val="3">3</button>
+      <button data-val="+">+</button>
+
+      <button data-val="0">0</button>
+      <button data-val=".">.</button>
+      <button data-func="calculate">=</button>
+      <button data-val="^">^</button>
+
+      <!-- Scientific -->
+      <button data-val="sin(">sin</button>
+      <button data-val="cos(">cos</button>
+      <button data-val="tan(">tan</button>
+      <button data-val="log10(">log</button>
+      <button data-val="log(">ln</button>
+      <button data-val="sqrt(">√</button>
+      <button data-val="pi">π</button>
+      <button data-val="e">e</button>
+      <button data-val="(">(</button>
+      <button data-val=")">)</button>
+      <button data-val="!">n!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
